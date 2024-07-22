@@ -1,0 +1,663 @@
+/*new*/
+* {
+  box-sizing: border-box;
+}
+
+body, .fraim {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Зменшує можливість горизонтальної прокрутки */
+}
+
+/* Базовий фрейм */
+.fraim {
+  width: 300vw;
+  height: 3200px;
+  background: #FF6347;
+  opacity: 1;
+  position: relative;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+  .cat_img {
+    width: 100%;
+    height: auto;
+    top: 80px; /* Приклад зміни позиції для маленьких екранів */
+  }
+
+  .tgchnl_block, .site_buttons {
+    width: 100%;
+    left: 0;
+    top: auto; /* Налаштуйте відповідно до контенту */
+  }
+
+  /* Додаткові налаштування для інших елементів */
+}
+/* Стиль для виділеного тексту */
+.highlighted-text {
+  font-weight: 900; /* Extra Bold */
+  font-size: 44px;
+  text-shadow: 0.7px 0.7px 0.7px #FFFFFF;
+  color: #FFFF00; /* Замініть на потрібний колір, якщо це інший колір для виділеного тексту */
+}
+ .highlighted-text1 {
+  font-weight: 700; /* Extra Bold */
+  font-size: 30px;
+  text-shadow: 1px 1px 0.7px #FFFFFF;
+  color: #F5F5DC;
+  line-height: 1.5;
+}
+.highlighted-text2 {
+  font-weight: 500; /* Extra Bold */
+  font-size: 40px;
+  text-shadow: 0.7px 0.7px 0.7px #000000;
+  color: #F5F5DC;
+  line-height: 1.5;
+}
+.tin-text {
+  font-weight: 500; /* Extra Bold */
+  font-size: 20px;
+  text-shadow: 0.7px 0.7px 0.7px #FFFFFF;
+  color: #0C0B0B;
+}
+.promoblock-text {
+  font-weight: 700; /* Extra Bold */
+  font-size: 30px;
+  text-shadow: 0.7px 0.7px 0.7px #000000;
+  color: #FFFFE0;
+}
+.promoblock-text2 {
+  font-weight: 700; /* Extra Bold */
+  font-size: 30px;
+  text-shadow: 0.7px 0.7px 0.7px #000000;
+  color: #FFFFE0;
+}
+
+a.highlighted-text {
+  text-decoration: underline;
+  color: none /* Використовує колір батьківського елемента */
+  font-weight: none; /* Зберігає вагу шрифту */
+}
+
+.elipse2 {
+  width: 2153px;
+  height: 2166px;
+  background: #800000;
+  opacity: 0.3;
+  position: absolute;
+  top: -237px;
+  left: 20px;
+  border-radius: 50%;
+  transform: rotate(-100deg);
+}
+.elipse_one {
+  width: 1100px;
+  height: 1558px;
+  background: rgba(255,127,80,0.8999999761581421);
+  opacity: 1;
+  position: absolute;
+  top: -144px;
+  left: -380px;
+  border-radius: 70%;
+  transform: rotate(10deg);
+}
+.elipse_3 {
+  width: 3000px;
+  height: 2058px;
+  background: #F4A460;
+  opacity: 1;
+  position: absolute;
+  top: 1224px;
+  left: -580px;
+  border-radius: 70%;
+  transform: rotate(10deg);
+}
+.main_logo_block {
+  width: 552px;
+  height: 40px;
+  background: url("https://raw.githubusercontent.com/DiscountsFromAli/DISCOUNTS-FROM-ALI/50b8ef25d272800693752ad34036703decfa91ba/images/v668_35.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 40px;
+  left: 50px;
+  overflow: hidden;
+}
+
+.alicats_main_logo {
+  width: 40px;
+  height: 40px;
+  background: url("https://raw.githubusercontent.com/DiscountsFromAli/DISCOUNTS-FROM-ALI/50b8ef25d272800693752ad34036703decfa91ba/images/main_logo.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  overflow: hidden;
+}
+/*head*/
+.main_logo_text {
+  width: 826px;
+  color: rgba(251,246,246,1);
+  position: absolute;
+  top: 1px;
+  left: 52px;
+  text-shadow: 3px 3px 3px #000000;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 32px;
+  opacity: 1;
+  text-align: left;
+}
+
+.cat_img {
+  width: 200px;
+  height: 200px;
+  background: url("https://raw.githubusercontent.com/DiscountsFromAli/DISCOUNTS-FROM-ALI/50b8ef25d272800693752ad34036703decfa91ba/images/v661_11.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 0.7;
+  position: fixed; /* Змінено з absolute на fixed */
+  top: 200px;
+  left: 580px;
+  overflow: hidden;
+}
+/* Основний стиль для тексту */
+.main_text {
+  width: 726px;
+  height: 400px;
+  color: #0C0B0B;
+  position: absolute;
+  top: 100px;
+  left: 50px;
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 32px;
+  text-shadow: 0.7px 0.7px 0.7px #FFFFFF;
+  opacity: 1;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.main_pagelink {
+  display: block; /* Зробити посилання блоковим елементом */
+  width: 550px;
+  height: 70px;
+  background: url("https://ae01.alicdn.com/kf/S82904683b91445e5b37aeb352bd2b9f2Z.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: relative;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.main_uapagelink {
+  display: block; /* Зробити посилання блоковим елементом */
+  width: 550px;
+  height: 190px;
+  background: url("https://ae01.alicdn.com/kf/S1235c4c687ee444988fec0aebf44facb6.png_.webp");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: relative;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+.main_uapagelink2 {
+  display: block; /* Зробити посилання блоковим елементом */
+  width: 550px;
+  height: 190px;
+  background: url("https://ae01.alicdn.com/kf/S1235c4c687ee444988fec0aebf44facb6.png_.webp");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: relative;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+.main_bestsellers {
+  display: block; /* Зробити посилання блоковим елементом */
+  width: 560px;
+  height: 70px;
+  background: url("https://ae01.alicdn.com/kf/Sdcdfe8592c064bf296a23eea5d345063f.png_.webp");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: relative;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.main_uabestsellers {
+  display: block; /* Зробити посилання блоковим елементом */
+  width: 550px;
+  height: 70px;
+  background: url("https://ae01.alicdn.com/kf/S5c54df7d6f054e27ba153b2a2aaf13056.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: relative;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.calendar_logo {
+  width: 20px; /* Зменшити розмір іконки */
+  height: 20px;
+  background: url("https://cdn4.iconfinder.com/data/icons/essentials-71/24/011_-_Calendar-60.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  margin-right: 16px; /* Відстань між іконкою і текстом */
+}
+
+.date-container {
+  display: flex;
+  align-items: center;
+}
+.sumlogo-container {
+  display: flex;
+  align-items: left;
+}
+.date-text {
+  font-size: 20px; /* Стилізація тексту дати */
+}
+.promocode-main {
+  font-weight: 900; /* Extra Bold */
+  font-size: 36px;
+  text-shadow: 3px 3px 3px #000000;
+  color: #FFFFFF;
+}
+.promocode-text {
+  font-weight: 500; /* Extra Bold */
+  font-size: 18px;
+  text-shadow: 0px 0px 0px #FFFFFF;
+  color: #000000;
+}
+.code-container189, code-container219, code-container399 {
+display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-bottom: 5px;
+}
+.code-container {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-bottom: 5px;
+}
+
+.code-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0px; /* Відстань між елементами */
+}
+
+.code_logo {
+  width:25px; /* Розмір іконки */
+  height: 25px;
+  background: url("https://cdn0.iconfinder.com/data/icons/miscellaneous-74-line/128/promocode_advertising_coupon_tag_label_voucher_code_clearance_discount_-60.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin-right: 16px; /* Відстань між іконкою і текстом */
+}
+
+.code-text {
+  font-size: 26px;
+  font-weight: lighter;
+  display: inline-block;
+  color: #FFFF00
+}
+
+.code-sum {
+  font-size: 26px;
+  font-weight: bold;
+  display: inline-block;
+
+}
+.sum_logo {
+  width:30px; /* Розмір іконки */
+  height: 30px;
+  background: url("https://cdn0.iconfinder.com/data/icons/business-1746/32/Income-60.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin-right: 10px; /* Відстань між іконкою і текстом */
+}
+
+/* блок телеграм канали */
+.tgchnl_block {
+  width: 404px;
+  height: 1077px;
+  background: url("https://raw.githubusercontent.com/DiscountsFromAli/DISCOUNTS-FROM-ALI/50b8ef25d272800693752ad34036703decfa91ba/images/v759_2.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 41px;
+  left: 675px;
+  overflow: hidden;
+}
+/*  */
+}
+.name {
+  color: #fff;
+}
+.tgchnl_text {
+  width: 404px;
+  color: #FFFFFF;
+  position: relative;
+  top: 0px;
+  left: 50px;
+  text-shadow: 3px 3px 0px #000000;
+  font-family: Montserrat;
+  font-weight: 800;
+  font-size: 24px;
+  opacity: 1;
+  text-align: left;
+}
+.alicats_logo {
+  width: 60px;
+  height: 60px;
+  background: url("https://raw.githubusercontent.com/DiscountsFromAli/DISCOUNTS-FROM-ALI/50b8ef25d272800693752ad34036703decfa91ba/images/alicats_logo.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  box-shadow: 2px 2px 1px #000000;
+  opacity: 1;
+  position: absolute;
+  top: 49px;
+  left: 180px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius:5px;
+  border-bottom-right-radius: 5px;
+  overflow: hidden;
+}
+.shara_logo {
+  width: 60px;
+  height: 60px;
+  background: url("https://raw.githubusercontent.com/DiscountsFromAli/DISCOUNTS-FROM-ALI/50b8ef25d272800693752ad34036703decfa91ba/images/shara_logo.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  box-shadow: 2px 2px 1px #000000;
+  opacity: 1;
+  position: absolute;
+  top: 49px;
+  left: 252px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius:5px;
+  border-bottom-right-radius: 5px;
+  overflow: hidden;
+}
+.coupons_logo {
+  width: 60px;
+  height: 60px;
+  background: url("https://raw.githubusercontent.com/DiscountsFromAli/DISCOUNTS-FROM-ALI/50b8ef25d272800693752ad34036703decfa91ba/images/coupons_logo.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  box-shadow: 2px 2px 1px #000000;
+  opacity: 1;
+  position: absolute;
+  top: 49px;
+  left: 330px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius:5px;
+  border-bottom-right-radius: 5px;
+  overflow: hidden;
+  }
+
+.site_buttons_block {
+  position: relative; /* Додайте це, щоб встановити контекст позиціонування */
+  top: 220px;
+  left: 810px;
+}
+
+.block-link {
+    display: block; /* Забезпечує, що посилання обгортає весь блок */
+    color: inherit; /* Використовує колір батьківського елемента */
+    text-decoration: none; /* Видаляє підкреслення */
+}
+
+.block-link:hover {
+    text-decoration: none; /* Забезпечує, що підкреслення не з'являється при наведенні */
+}
+.coins_block {
+  width: 325px;
+  height: 97px;
+
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+/*COINS SALE*/
+.coins_block_name {
+  width: 261px;
+  height: 50px;
+  color: #FFFFFF;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  text-shadow: 5px 5px 5px #0C0B0B;
+  font-family: Montserrat, Black;
+  font-weight: 900;
+  font-size: 30px;
+  opacity: 1;
+  text-align: left;
+}
+
+.coins_block_text {
+  width: 290px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 45px;
+  left: 5px;
+  font-family: Montserrat;
+  font-weight: Medium;
+  font-size: 15px;
+  opacity: 1;
+  text-align: left;
+}
+.night_block {
+  width: 322px;
+  height: 97px;
+  background: url("https://raw.githubusercontent.com/DiscountsFromAli/DISCOUNTS-FROM-ALI/50b8ef25d272800693752ad34036703decfa91ba/images/v708_57.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 110px;
+  left: 0;
+  overflow: hidden;
+}
+/*NIGHT SALE*/
+.night_block_name {
+  width: 261px;
+  color: rgba(255,255,255,1);
+  position: relative;
+  top: 0;
+  left: 0;
+  text-shadow: 5px 5px 5px rgba(0.04583333432674408, 0.04487847164273262, 0.04487847164273262, 1);
+  font-family: Montserrat;
+  font-weight: 900;
+  font-size: 30px;
+  opacity: 1;
+  text-align: left;
+}
+.night_block_text {
+  width: 290px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 45px;
+  left: 2px;
+  font-family: Montserrat;
+  font-weight: Medium;
+  font-size: 15px;
+  opacity: 1;
+  text-align: left;
+}
+.coupon_block {
+  width: 322px;
+  height: 97px;
+  background: url("https://raw.githubusercontent.com/DiscountsFromAli/DISCOUNTS-FROM-ALI/50b8ef25d272800693752ad34036703decfa91ba/images/v708_58.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 220px;
+  left: 0;
+  overflow: hidden;
+}
+/*COUPONS*/
+.coupon_block_name {
+  width: 261px;
+  color: rgba(255,255,255,1);
+  position: relative;
+  top: 0px;
+  left: 0px;
+  text-shadow: 5px 5px 5px rgba(0.04583333432674408, 0.04487847164273262, 0.04487847164273262, 1);
+  font-family: Montserrat;
+  font-weight: 900;
+  font-size: 30px;
+  text-align: left;
+}
+.coupon_block_text {
+  width: 290px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 45px;
+  left: 2px;
+  font-family: Montserrat;
+  font-weight: Medium;
+  font-size: 15px;
+  opacity: 1;
+  text-align: left;
+}
+.coinsbot_block {
+  width: 322px;
+  height: 171px;
+  background: url("https://raw.githubusercontent.com/DiscountsFromAli/DISCOUNTS-FROM-ALI/50b8ef25d272800693752ad34036703decfa91ba/images/v708_59.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 330px;
+  left: 0;
+  overflow: hidden;
+}
+/*COINS BOT*/
+.coins_bot {
+  width: 261px;
+  color: rgba(255,255,255,1);
+  position: relative;
+  top: 0px;
+  left: 0px;
+  text-shadow: 5px 5px 5px rgba(0.04583333432674408, 0.04487847164273262, 0.04487847164273262, 1);
+  font-family: Montserrat;
+  font-weight: 900;
+  font-size: 30px;
+  opacity: 1;
+  text-align: left;
+}
+.coin_bot_text {
+  width: 290px;
+  top: 45px;
+  left: 2px;
+  position: absolute;
+  color: rgba(255,255,255,1);
+  font-family: Montserrat;
+  font-weight: Medium;
+  font-size: 15px;
+  opacity: 1;
+  text-align: left;
+}
+.pedro_block {
+  width: 320px;
+  height: 171px;
+  background: url("https://raw.githubusercontent.com/DiscountsFromAli/DISCOUNTS-FROM-ALI/50b8ef25d272800693752ad34036703decfa91ba/images/v708_60.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 510px;
+  left: 0;
+  overflow: hidden;
+}
+.pedro_bot_name {
+  width: 261px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  text-shadow: 5px 5px 5px rgba(0.04583333432674408, 0.04487847164273262, 0.04487847164273262, 1);
+  font-family: Montserrat;
+  font-weight: 900;
+  font-size: 30px;
+  opacity: 1;
+  text-align: left;
+}
+.pedro_bot_text {
+  width: 290px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 45px;
+  left: 0px;
+  font-family: Montserrat;
+  font-weight: Medium;
+  font-size: 15px;
+  opacity: 1;
+  text-align: left;
+}
