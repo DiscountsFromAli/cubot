@@ -245,7 +245,7 @@ a.highlighted-text {
 }
 .main_bestsellers {
   display: block; /* Зробити посилання блоковим елементом */
-  width: 560px;
+  width: 550px;
   height: 70px;
   background: url("https://ae01.alicdn.com/kf/Sdcdfe8592c064bf296a23eea5d345063f.png_.webp");
   background-repeat: no-repeat;
